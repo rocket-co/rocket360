@@ -1008,7 +1008,7 @@ h1 {
     right: 290px;
     width: 30px;
     height: 30px;
-    background: #2094FF url(https://designmodo.com/startup/app/i/loader-icon.svg) no-repeat 50% 50%;
+    background: #2094FF no-repeat 50% 50%;
     background-size: 70% auto;
     border-radius: 100%;
     z-index: 2
