@@ -1,0 +1,2834 @@
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0
+}
+
+hr {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+a {
+    background-color: transparent
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted
+}
+
+b, strong {
+    font-weight: bolder
+}
+
+code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -0.25em
+}
+
+sup {
+    top: -0.5em
+}
+
+img {
+    border-style: none
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button, input {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring,
+button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em
+}
+
+legend {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox], [type=radio] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+template {
+    display: none
+}
+
+[hidden] {
+    display: none
+}
+
+* , :after, :before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", Helvetica, Arial, serif;
+    outline: none
+}
+
+a {
+    outline: none;
+    text-decoration: none
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+li {
+    list-style: none
+}
+
+::-moz-selection {
+    background: transparent
+}
+
+::webkit-selection {
+    background: transparent
+}
+
+::-moz-selection {
+    background: transparent
+}
+
+::selection {
+    background: transparent
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    box-shadow: 0 0 0px 1000px white inset !important;
+    background: transparent !important
+}
+
+body {
+    font-family: "Poppins", Helvetica, Arial, serif;
+    background: #F5F4F9;
+    padding-bottom: 40px;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    cursor: default
+}
+
+body.noscroll {
+    overflow: hidden !important;
+    position: static
+}
+
+body.noBlocks #toggle {
+    right: 10px;
+    -webkit-transform: translateX(200%);
+    -ms-transform: translateX(200%);
+    transform: translateX(200%)
+}
+
+body.noBlocks #loading_icon {
+    display: none !important
+}
+
+body.noBlocks #sideMenu .control_panel {
+    overflow: hidden;
+    width: 50px;
+    padding: 9px
+}
+
+body.noBlocks #sideMenu .control_panel a:not(#random_layout_toggle) {
+    -webkit-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transform: scale(0.0001);
+    -ms-transform: scale(0.0001);
+    transform: scale(0.0001)
+}
+
+body.noBlocks #sideMenu .control_panel #random_layout_toggle {
+    margin-left: 0
+}
+
+body.noBlocks #rightSide {
+    -webkit-transform: translateX(240px);
+    -ms-transform: translateX(240px);
+    transform: translateX(240px)
+}
+
+body.noBlocks #blocks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    cursor: w-resize
+}
+
+body.noBlocks #blocksHolder .browser {
+    min-height: 70vh
+}
+
+body.noBlocks #blocksHolder .start_block {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1)
+}
+
+body.drag_on #toggle {
+    right: 10px
+}
+
+body.drag_on #loading_icon {
+    right: 64px
+}
+
+body.drag_on #blocksHolder .browser {
+    overflow: visible
+}
+
+body.drag_on #menu {
+    -webkit-transform: translateX(-240px);
+    -ms-transform: translateX(-240px);
+    transform: translateX(-240px)
+}
+
+body.drag_on #rightSide {
+    -webkit-transform: translateX(240px);
+    -ms-transform: translateX(240px);
+    transform: translateX(240px)
+}
+
+.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.flex.justify_center {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.flex.justify_start {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+.flex.justify_end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+.flex.align_start {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.flex.align_center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.flex.align_end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+.flex.direction_column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.flex.nowrap {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap
+}
+
+.col-2 {
+    width: 50%
+}
+
+.col-3 {
+    width: 33%;
+    width: calc(100% / 3)
+}
+
+.col-4 {
+    width: 25%
+}
+
+.loader {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f9f9f9 url(https://designmodo.com/startup/app/i/loader.svg) no-repeat 50% 50%;
+    background-size: 52px auto;
+    z-index: 9999
+}
+
+.btn {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 35px;
+    padding: 0 25px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    background: #6f6c72;
+    color: white;
+    letter-spacing: -0.225px;
+    white-space: nowrap;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s
+}
+
+.btn:hover {
+    color: white;
+    background: #5BE3D4
+}
+
+.btn:active, .btn:focus {
+    background: #1EAE9E
+}
+
+.btn.big {
+    height: 70px;
+    line-height: 70px;
+    padding: 0 40px;
+    font-weight: 600;
+    font-size: 20px
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    z-index: 9998
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 690px;
+    max-height: 90vh;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+    z-index: 9999
+}
+
+.popup.blue .pretitle, .popup.blue .title, .popup.green .pretitle,
+.popup.green .title, .popup .login:hover .pretitle, .popup .login:hover .title {
+    color: white
+}
+
+.popup.blue .sign_in, .popup.green .sign_in, .popup .login:hover .sign_in {
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.popup.blue .sign_in a, .popup.green .sign_in a, .popup .login:hover .sign_in a {
+    color: white
+}
+
+.popup.blue .sign_in a:hover, .popup.green .sign_in a:hover, .popup .login:hover .sign_in a:hover {
+    color: white;
+    opacity: 0.7
+}
+
+.popup.blue + .close:hover .fill, .popup.blue .close:hover .fill, .popup.green + .close:hover .fill,
+.popup.green .close:hover .fill, .popup .login:hover + .close:hover .fill,
+.popup .login:hover .close:hover .fill {
+    fill: #fff
+}
+
+.popup.blue + .close .fill, .popup.blue .close .fill, .popup.green + .close .fill,
+.popup.green .close .fill, .popup .login:hover + .close .fill, .popup .login:hover .close .fill {
+    fill: white
+}
+
+.popup.blue, .popup.green {
+    -webkit-transition: all 0.5s cubic-bezier(0.39, 1.31, 0.28, 1);
+    -o-transition: all 0.5s cubic-bezier(0.39, 1.31, 0.28, 1);
+    transition: all 0.5s cubic-bezier(0.39, 1.31, 0.28, 1)
+}
+
+.popup.green {
+    background: #2094FF
+}
+
+.popup.promo {
+    height: auto
+}
+
+.popup.promo.blue {
+    background: #2094FF
+}
+
+.popup.promo.blue .or {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.popup.promo.blue .js-open-subscribe {
+    color: white;
+    border-color: rgba(235, 234, 237, 0.3)
+}
+
+.popup.promo.blue .js-open-subscribe:hover {
+    background: white;
+    border-color: white;
+    color: #2094FF
+}
+
+.popup.promo > .nano-content {
+    margin-right: -17px;
+    padding: 65px 77px 30px 60px;
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    max-height: 90vh
+}
+
+.popup.promo .nano-pane {
+    top: 60px;
+    bottom: 20px;
+    right: 5px;
+    width: 4px;
+    display: block !important;
+    background: none
+}
+
+.popup.promo .nano-slider {
+    background: #2094FF;
+    margin-left: 0px;
+    width: 4px;
+    opacity: 0.2;
+    cursor: pointer
+}
+
+.popup.promo .nano-slider:hover {
+    opacity: 0.8
+}
+
+.popup.promo .js-open-plan {
+    overflow: hidden
+}
+
+.popup.promo .or {
+    margin: 0 10px;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    -o-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1)
+}
+
+.popup.promo .js-open-subscribe {
+    border: 2px solid #EBEAED;
+    height: 70px;
+    line-height: 66px;
+    background: transparent;
+    color: #2094FF
+}
+
+.popup.promo .js-open-subscribe:hover {
+    background: #EBEAED
+}
+
+.popup.promo .plans {
+    display: none
+}
+
+.popup.promo .plans .plan {
+    position: relative;
+    width: 270px;
+    padding: 40px 25px;
+    padding-bottom: 115px;
+    color: #2094FF;
+    background: white;
+    border-radius: 20px;
+    -webkit-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    -o-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1)
+}
+
+.popup.promo .plans .plan.dark {
+    background: #2094FF
+}
+
+.popup.promo .plans .plan .name {
+    margin-bottom: 12px;
+    line-height: 32px;
+    font-size: 22px;
+    letter-spacing: -0.4px
+}
+
+.popup.promo .plans .plan .price {
+    font-weight: 700;
+    line-height: 70px;
+    font-size: 58px;
+    letter-spacing: -0.6px
+}
+
+.popup.promo .plans .plan .per_year {
+    margin-bottom: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase
+}
+
+.popup.promo .plans .plan .advantages {
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.4px
+}
+
+.popup.promo .plans .plan .btn {
+    position: absolute;
+    left: 50%;
+    bottom: 45px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.popup.promo .subscribe_form {
+    display: none;
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 60px
+}
+
+.popup.promo .subscribe_form form {
+    margin: 0 auto;
+    max-width: 490px;
+    text-align: left;
+    color: #a1a1b0
+}
+
+.popup.promo .subscribe_form .title {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #2094FF
+}
+
+.popup.promo .subscribe_form .input_holder {
+    margin-bottom: 20px;
+    width: 100%
+}
+
+.popup.promo .subscribe_form .input_holder.half {
+    width: 50%
+}
+
+.popup.promo .subscribe_form #registration_first_name {
+    padding-right: 15px
+}
+
+.popup.promo .subscribe_form #registration_last_name {
+    padding-left: 15px
+}
+
+.popup.promo .subscribe_form .label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+.popup.promo .subscribe_form .error {
+    display: none;
+    padding-left: 27px;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #E93A7D
+}
+
+.popup.promo .subscribe_form input {
+    height: 50px;
+    line-height: 46px;
+    background: white;
+    width: 100%;
+    padding: 0 24px;
+    border: 2px solid #EBEAED;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #2094FF;
+    -webkit-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    -o-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1)
+}
+
+.popup.promo .subscribe_form input::-moz-placeholder {
+    color: #a1a1b0
+}
+
+.popup.promo .subscribe_form input::-webkit-input-placeholder {
+    color: #a1a1b0
+}
+
+.popup.promo .subscribe_form input:-ms-input-placeholder {
+    color: #a1a1b0
+}
+
+.popup.promo .subscribe_form input:focus {
+    border-color: #2094FF
+}
+
+.popup.promo .subscribe_form input:focus::-moz-placeholder {
+    color: transparent
+}
+
+.popup.promo .subscribe_form input:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+.popup.promo .subscribe_form input:focus:-ms-input-placeholder {
+    color: transparent
+}
+
+.popup.promo .subscribe_form button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 0 15px
+}
+
+.popup.promo .subscribe_form #registration_agree {
+    margin-bottom: 0
+}
+
+.popup.promo .subscribe_form #registration_agree label {
+    margin-top: 10px
+}
+
+.popup.promo .subscribe_form #registration_agree .agree_text {
+    line-height: 22px;
+    font-weight: 500
+}
+
+.popup.promo .subscribe_form #registration_agree .agree_text a {
+    color: #2094FF
+}
+
+.popup.promo .subscribe_form #registration_agree .agree_text a:hover {
+    color: #2094FF
+}
+
+.popup.promo .subscribe_form input[type=checkbox] {
+    display: none
+}
+
+.popup.promo .subscribe_form input[type=checkbox]:checked + label .toggle {
+    background: #2094FF
+}
+
+.popup.promo .subscribe_form input[type=checkbox]:checked + label .toggle:after {
+    -webkit-transform: translate(19px, -50%);
+    -ms-transform: translate(19px, -50%);
+    transform: translate(19px, -50%)
+}
+
+.popup.promo .subscribe_form input[type=checkbox] + label .toggle {
+    position: relative;
+    margin-right: 18px;
+    width: 54px;
+    height: 35px;
+    background: #EBEAED;
+    border-radius: 100px;
+    border: none;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+    cursor: pointer
+}
+
+.popup.promo .subscribe_form input[type=checkbox] + label .toggle:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: white;
+    -webkit-box-shadow: 0px 5px 10px rgba(117, 117, 117, 0.5);
+    box-shadow: 0px 5px 10px rgba(117, 117, 117, 0.5);
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s
+}
+
+.popup.promo .login {
+    display: none;
+    background-color: white;
+    -webkit-transition: background-color 0.5s cubic-bezier(0.39, 1.31, 0.28, 1);
+    -o-transition: background-color 0.5s cubic-bezier(0.39, 1.31, 0.28, 1);
+    transition: background-color 0.5s cubic-bezier(0.39, 1.31, 0.28, 1)
+}
+
+.popup.promo .login:hover {
+    background-color: #2094FF
+}
+
+.popup.promo .login:hover input {
+    border-color: white
+}
+
+.popup.promo .login:hover button {
+    background: #2094FF
+}
+
+.popup.promo .login:hover button:hover {
+    background: #2c148f
+}
+
+.popup.promo .login form {
+    margin: 0 auto;
+    max-width: 400px
+}
+
+.popup.promo .login input {
+    margin-bottom: 30px;
+    height: 50px;
+    line-height: 46px;
+    background: white;
+    width: 100%;
+    padding: 0 24px;
+    border: 2px solid #EBEAED;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #2094FF;
+    -webkit-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    -o-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1)
+}
+
+.popup.promo .login input::-moz-placeholder {
+    color: #a1a1b0
+}
+
+.popup.promo .login input::-webkit-input-placeholder {
+    color: #a1a1b0
+}
+
+.popup.promo .login input:-ms-input-placeholder {
+    color: #a1a1b0
+}
+
+.popup.promo .login input:focus::-moz-placeholder {
+    color: transparent
+}
+
+.popup.promo .login input:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+.popup.promo .login input:focus:-ms-input-placeholder {
+    color: transparent
+}
+
+.popup.promo .login .errors {
+    display: none;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #E93A7D
+}
+
+.popup a, .popup button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    -o-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1)
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 10
+}
+
+.popup .close:hover {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.popup .close:hover .fill {
+    fill: #333
+}
+
+.popup .close .fill {
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s
+}
+
+.popup .pretitle {
+    margin-bottom: 18px;
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2094FF
+}
+
+.popup .title {
+    margin-bottom: 40px;
+    line-height: 52px;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    color: #2094FF
+}
+
+.popup .sign_in {
+    margin-top: 40px;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    color: #919DAB
+}
+
+.popup .sign_in.hidden {
+    margin-top: 0;
+    visibility: hidden
+}
+
+.popup .sign_in a {
+    font-weight: 500;
+    color: #2094FF;
+    letter-spacing: -0.225px;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s
+}
+
+.popup .sign_in a:hover {
+    color: #2094FF
+}
+
+h1 {
+    font-size: 35px;
+    color: #1b1f23;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 50px;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s
+}
+
+#toggle {
+    position: fixed;
+    top: 10px;
+    right: 236px;
+    width: 44px;
+    height: 30px;
+    background: #cac6db url(https://designmodo.com/startup/app/i/toggle.svg) no-repeat 50% 50%;
+    border-radius: 22px;
+    -webkit-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    -o-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    cursor: pointer;
+    z-index: 1000
+}
+
+#toggle:hover {
+    background-color: #8981ad
+}
+
+#loading_icon {
+    position: fixed;
+    top: 10px;
+    right: 290px;
+    width: 30px;
+    height: 30px;
+    background: #2094FF url(https://designmodo.com/startup/app/i/loader-icon.svg) no-repeat 50% 50%;
+    background-size: 70% auto;
+    border-radius: 100%;
+    z-index: 2
+}
+
+#menuGradient {
+    position: fixed;
+    width: 800px;
+    max-width: 100%;
+    top: 0px;
+    left: 0px;
+    bottom: 0;
+    background: -webkit-gradient(linear, left top, right top, from(#2094FF), color-stop(90.29%, rgba(30, 14, 98, 0)));
+    background: -webkit-linear-gradient(left, #2094FF 0%, rgba(30, 14, 98, 0) 90.29%);
+    background: -o-linear-gradient(left, #2094FF 0%, rgba(30, 14, 98, 0) 90.29%);
+    background: linear-gradient(90deg, #2094FF 0%, rgba(30, 14, 98, 0) 90.29%);
+    opacity: 0.2;
+    z-index: 99;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s
+}
+
+#menuGradient.hidden {
+    opacity: 0;
+    visibility: hidden
+}
+
+#menu {
+    position: fixed;
+    min-width: 230px;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    -o-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1)
+}
+
+#sideMenu {
+    position: relative;
+    width: 210px;
+    padding: 24px 16px;
+    background: #2094FF;
+    border-radius: 10px;
+    z-index: 1;
+    -webkit-transition: background 0.5s cubic-bezier(0.39, 1.31, 0.28, 1), left 0.5s;
+    -o-transition: background 0.5s cubic-bezier(0.39, 1.31, 0.28, 1), left 0.5s;
+    transition: background 0.5s cubic-bezier(0.39, 1.31, 0.28, 1), left 0.5s
+}
+
+#sideMenu.active .aboutMenu, #sideMenu.active li {
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s
+}
+
+#sideMenu.active li {
+    margin-left: -10px
+}
+
+#sideMenu > * {
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s
+}
+
+#sideMenu.ui-droppable.active.hovered + div {
+    display: none
+}
+
+#sideMenu .logo_3_0 {
+    padding-left: 8px;
+    line-height: 1.2;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.292683px;
+    color: #ffffff
+}
+
+#sideMenu ul {
+    margin-top: 10px
+}
+
+#sideMenu li {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    letter-spacing: -0.225px;
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s
+}
+
+#sideMenu li.selected span {
+    background: rgba(255, 255, 255, 0.3)
+}
+
+#sideMenu li span {
+    display: inline-block;
+    padding: 6px 8px;
+    border-radius: 10px;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s
+}
+
+#sideMenu .control_panel {
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.225px;
+    background: #2094FF;
+    border-radius: 10px;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s
+}
+
+#sideMenu .control_panel a {
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+    cursor: pointer
+}
+
+#sideMenu .control_panel #export {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    background: #2094FF;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.225px;
+    color: white;
+    border-radius: 5px;
+    overflow: hidden
+}
+
+#sideMenu .control_panel #export:hover {
+    background: #5BE3D4
+}
+
+#sideMenu .control_panel #export:active, #sideMenu .control_panel #export:focus {
+    background: #1EAE9E
+}
+
+#sideMenu .control_panel #export.locked {
+    padding: 0 20px 0 40px
+}
+
+#sideMenu .control_panel #export.locked:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: url(https://designmodo.com/startup/app/i/lock.svg) no-repeat 50% 50%;
+    z-index: 2
+}
+
+#sideMenu .control_panel #export.preloader {
+    cursor: wait
+}
+
+#sideMenu .control_panel #export.preloader:hover {
+    opacity: 1
+}
+
+#sideMenu .control_panel #export.preloader span {
+    position: relative;
+    z-index: 1
+}
+
+#sideMenu .control_panel #export.preloader .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    background: #2094FF;
+    -webkit-animation: preloader 30s forwards;
+    animation: preloader 30s forwards;
+    height: 100%;
+    z-index: 0
+}
+
+@-webkit-keyframes preloader {
+    0% {
+        width: 0%
+    }
+
+    20% {
+        width: 30%
+    }
+
+    40% {
+        width: 60%
+    }
+
+    60% {
+        width: 62%
+    }
+
+    80% {
+        width: 90%
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes preloader {
+    0% {
+        width: 0%
+    }
+
+    20% {
+        width: 30%
+    }
+
+    40% {
+        width: 60%
+    }
+
+    60% {
+        width: 62%
+    }
+
+    80% {
+        width: 90%
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+#sideMenu .control_panel #preview, #sideMenu .control_panel #random_layout_toggle {
+    width: 32px;
+    height: 32px
+}
+
+#sideMenu .control_panel #preview:hover, #sideMenu .control_panel #random_layout_toggle:hover {
+    opacity: 0.8
+}
+
+#sideMenu .control_panel #random_layout_toggle {
+    margin-left: 10px;
+    background: url(https://designmodo.com/startup/app/i/random.svg) no-repeat 50% 50%
+}
+
+#sideMenu .control_panel #random_layout_toggle.opened {
+    opacity: 0.3
+}
+
+#sideMenu .control_panel #preview {
+    background: url(https://designmodo.com/startup/app/i/preview.svg) no-repeat 50% 50%
+}
+
+#sideMenu .random_layout {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: -214px;
+    width: 100%;
+    padding: 15px 20px 20px 20px;
+    color: white;
+    background: #2094FF;
+    border-radius: 10px;
+    overflow: hidden;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none
+}
+
+#sideMenu .random_layout .title {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center
+}
+
+#sideMenu .random_layout .subtitle {
+    margin-top: 15px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 500
+}
+
+#sideMenu .random_layout .random_layout_params {
+    position: relative
+}
+
+#sideMenu .random_layout .random_layout_params #random_layout_value {
+    position: absolute;
+    top: -32px;
+    right: 0;
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: -0.225px;
+    color: #2094FF
+}
+
+#sideMenu .random_layout .btn {
+    margin-top: 17px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    background: #E93A7D;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer
+}
+
+#sideMenu .random_layout .btn:hover {
+    background: #d81862
+}
+
+#subMenu {
+    position: absolute;
+    width: 346px;
+    left: 210px;
+    top: -10px;
+    height: 100vh;
+    background: transparent;
+    border-radius: 10px;
+    -webkit-transform-origin: 0px 0px;
+    -ms-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+#subMenu.hidden {
+    visibility: hidden;
+    opacity: 0
+}
+
+#subMenu.hidden li {
+    -webkit-animation: none !important;
+    animation: none !important
+}
+
+#subMenu .nano-content {
+    padding: 10px;
+    right: 0px !important
+}
+
+#subMenu .nano-pane {
+    top: 0px;
+    bottom: 0px;
+    right: 6px;
+    width: 4px;
+    display: block !important;
+    background: none
+}
+
+#subMenu .nano-slider {
+    background: #2094FF;
+    margin-left: 0px;
+    width: 4px;
+    opacity: 0.2;
+    cursor: pointer
+}
+
+#subMenu .nano-slider:hover {
+    opacity: 0.8
+}
+
+#subMenu ul {
+    display: none
+}
+
+#subMenu ul.visible {
+    display: block
+}
+
+#subMenu li {
+    margin-bottom: 5px;
+    position: relative;
+    display: block;
+    line-height: 0;
+    border-radius: 10px;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    cursor: move;
+    opacity: 0;
+    -webkit-animation: subMenu 0.15s forwards 0.15s;
+    animation: subMenu 0.15s forwards 0.15s
+}
+
+@-webkit-keyframes subMenu {
+    0% {
+        left: -30px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+@keyframes subMenu {
+    0% {
+        left: -30px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+#subMenu li:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+    z-index: 1
+}
+
+#subMenu li:hover span {
+    opacity: 1
+}
+
+#subMenu li.locked {
+    cursor: no-drop
+}
+
+#subMenu li.locked:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 26px;
+    border-radius: 5px;
+    background: #2094FF url(https://designmodo.com/startup/app/i/lock-white.svg) no-repeat 50% 50%;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s
+}
+
+#subMenu li.dark span {
+    background: #EBEAED;
+    color: #919DAB
+}
+
+#subMenu li.dark.locked:before {
+    background: #EBEAED url(https://designmodo.com/startup/app/i/lock-gray.svg) no-repeat 50% 50%
+}
+
+#subMenu li img {
+    display: block;
+    width: 100%;
+    min-height: 45px;
+    border-radius: 10px;
+    background: #fff
+}
+
+#subMenu li span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 14px;
+    border-radius: 5px;
+    background: #2094FF;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s
+}
+
+.ui-draggable-dragging img {
+    z-index: 500;
+    -webkit-box-shadow: 0px 24px 50px rgba(17, 7, 60, 0.25);
+    box-shadow: 0px 24px 50px rgba(17, 7, 60, 0.25);
+    border-radius: 10px;
+    cursor: move
+}
+
+.ui-draggable-dragging img {
+    display: block
+}
+
+.ui-draggable-dragging span, .ui-sortable-helper span {
+    display: none
+}
+
+li.ui-draggable-dragging.ui-sortable-helper {
+    z-index: 1100
+}
+
+.name {
+    margin-bottom: 70px
+}
+
+.name #project {
+    width: 100%;
+    padding: 0;
+    font-size: 42px;
+    text-align: center;
+    background: none;
+    border: none;
+    font-family: "Poppins", Helvetica, Arial, serif;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    line-height: normal;
+    outline: none;
+    color: #2094FF;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s
+}
+
+.name #project::-moz-placeholder {
+    color: #2094FF;
+    opacity: 0.2
+}
+
+.name #project::-webkit-input-placeholder {
+    color: #2094FF;
+    opacity: 0.2
+}
+
+.name #project:-ms-input-placeholder {
+    color: #2094FF;
+    opacity: 0.2
+}
+
+.name #project:focus::-moz-placeholder {
+    color: transparent
+}
+
+.name #project:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+.name #project:focus:-ms-input-placeholder {
+    color: transparent
+}
+
+.container {
+    margin: 0 auto !important;
+    max-width: 900px !important;
+    padding: 70px 50px 90px 50px !important;
+    position: relative !important;
+    left: 0px !important;
+    -webkit-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    text-align: center !important;
+    font-size: 19px !important;
+    -webkit-transition: all 0.5s !important;
+    -o-transition: all 0.5s !important;
+    transition: all 0.5s !important;
+}
+
+#blocksHolder {}
+
+#blocksHolder .container.dragging {
+    z-index: 1000
+}
+
+#blocksHolder .browser {
+    background: #fff;
+    position: relative;
+    border-radius: 10px
+}
+
+#blocksHolder .start_block {
+    opacity: 0;
+    -webkit-transform: scale(0.01);
+    -ms-transform: scale(0.01);
+    transform: scale(0.01);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s
+}
+
+#blocksHolder .start_block .title {
+    font-family: Poppins;
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #2094FF;
+    opacity: 0.2;
+    letter-spacing: -0.4px
+}
+
+#blocks {
+    position: relative;
+    text-align: center;
+    -webkit-transition: min-height 0.75s cubic-bezier(0.39, 1.31, 0.28, 1);
+    -o-transition: min-height 0.75s cubic-bezier(0.39, 1.31, 0.28, 1);
+    transition: min-height 0.75s cubic-bezier(0.39, 1.31, 0.28, 1);
+    border-radius: 0 0 2px 2px;
+    min-height: 0;
+    z-index: 1
+}
+
+#blocks.empty li.placeholder {
+    height: 70vh;
+    min-height: 360px;
+    border-radius: 10px
+}
+
+
+#blocks li {
+    position: relative;
+    text-align: left;
+    line-height: 0;
+    width: 100%;
+    /* background: #fff url(https://designmodo.com/startup/app/i/loader.svg) no-repeat 50% 50%; */
+    background-size: 52px auto;
+    -webkit-transition: -webkit-box-shadow 0.25s;
+    transition: -webkit-box-shadow 0.25s;
+    -o-transition: box-shadow 0.25s;
+    transition: box-shadow 0.25s;
+    transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+    overflow: hidden
+}
+
+#blocks li:hover {
+    -webkit-box-shadow: 0 0 0 2px #2094FF;
+    box-shadow: 0 0 0 2px #2094FF;
+    z-index: 100
+}
+
+#blocks li:hover .delete, #blocks li:hover .move, #blocks li:hover span, #blocks li:hover .edit  {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px)
+}
+
+#blocks li:first-of-type, #blocks li:first-of-type iframe, #blocks li:first-of-type img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+#blocks li:last-of-type, #blocks li:last-of-type iframe, #blocks li:last-of-type img {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px
+}
+
+#blocks li:first-of-type .down, #blocks li:last-of-type .up {
+    height: 30px
+}
+
+#blocks li:first-of-type .up, #blocks li:last-of-type .down {
+    display: none
+}
+
+#blocks li:first-of-type.placeholder {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+#blocks li:last-of-type.placeholder {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px
+}
+
+#blocks li.load iframe, #blocks li.load img {
+    opacity: 0
+}
+
+#blocks li.locked {}
+
+#blocks li.locked:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white url(https://designmodo.com/startup/app/i/lock-dark-blue.svg) no-repeat 50% 50%;
+    -webkit-box-shadow: 0px 1px 4px rgba(20, 19, 69, 0.15);
+    box-shadow: 0px 1px 4px rgba(20, 19, 69, 0.15);
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: move;
+    z-index: 100
+}
+
+#blocks li.locked span {
+    left: 52px
+}
+
+#blocks li.placeholder {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(206, 203, 219, 0.4)), to(rgba(206, 203, 219, 0.4)));
+    background: -webkit-linear-gradient(bottom, rgba(206, 203, 219, 0.4), rgba(206, 203, 219, 0.4));
+    background: -o-linear-gradient(bottom, rgba(206, 203, 219, 0.4), rgba(206, 203, 219, 0.4));
+    background: linear-gradient(0deg, rgba(206, 203, 219, 0.4), rgba(206, 203, 219, 0.4));
+    height: 100px;
+    -webkit-transition: all 0.5s cubic-bezier(0.39, 1.31, 0.28, 1);
+    -o-transition: all 0.5s cubic-bezier(0.39, 1.31, 0.28, 1);
+    transition: all 0.5s cubic-bezier(0.39, 1.31, 0.28, 1)
+}
+
+#blocks li.ui-sortable-helper {
+    width: 300px !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    -webkit-transition: width 0.1s, height 0.1s;
+    -o-transition: width 0.1s, height 0.1s;
+    transition: width 0.1s, height 0.1s
+}
+
+#blocks li.ui-sortable-helper .delete, #blocks li.ui-sortable-helper .move,
+#blocks li.ui-sortable-helper span {
+    opacity: 0
+}
+
+#blocks li.ui-sortable-helper img {
+    opacity: 1;
+    border-radius: 0 !important
+}
+
+#blocks li.ui-sortable-helper iframe {
+    display: none
+}
+
+#blocks li.ui-sortable-helper iframe + img {
+    display: block
+}
+
+#blocks li img {
+    display: block;
+    width: 100%;
+    -webkit-transition: height 0.25s, opacity 0.25s;
+    -o-transition: height 0.25s, opacity 0.25s;
+    transition: height 0.25s, opacity 0.25s;
+    cursor: move
+}
+
+#blocks li iframe {
+    width: 1600px;
+    border: none;
+    -webkit-transform: scale(0.5625);
+    -ms-transform: scale(0.5625);
+    transform: scale(0.5625);
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transition: height 0.25s, opacity 0.25s;
+    -o-transition: height 0.25s, opacity 0.25s;
+    transition: height 0.25s, opacity 0.25s
+}
+
+#blocks li iframe:active, #blocks li iframe:focus, #blocks li iframe:hover {
+    pointer-events: none
+}
+
+#blocks li iframe + img {
+    display: none
+}
+
+#blocks li span {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    -webkit-transform: translateX(-40px);
+    -ms-transform: translateX(-40px);
+    transform: translateX(-40px);
+    white-space: nowrap;
+    padding: 0 10px;
+    background: white;
+    color: #2094FF;
+    border-radius: 15px;
+    line-height: 30px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-box-shadow: 0px 1px 4px rgba(20, 19, 69, 0.15);
+    box-shadow: 0px 1px 4px rgba(20, 19, 69, 0.15);
+    opacity: 0;
+    z-index: 20;
+    cursor: move;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s
+}
+
+#blocks li .delete, #blocks li .down, #blocks li .up ,#blocks li .edit {
+    display: block;
+    width: 30px;
+    height: 30px;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s
+}
+
+#blocks li .delete:hover, #blocks li .down:hover, #blocks li .up:hover ,#blocks li .edit:hover  {
+    background-color: #EBEAED
+}
+
+#blocks li .delete, #blocks li .move, #blocks li .edit  {
+    position: absolute;
+    right: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 1px 4px rgba(20, 19, 69, 0.15);
+    box-shadow: 0px 1px 4px rgba(20, 19, 69, 0.15);
+    opacity: 0;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+    z-index: 20;
+    cursor: pointer
+}
+
+#blocks li .move {
+    top: 89px;
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+    width: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden
+}
+
+#blocks li .down, #blocks li .up {
+    height: 25px
+}
+
+#blocks li .up {
+    background: white url(https://designmodo.com/startup/app/i/card-up.svg) no-repeat 50% 50%
+}
+
+#blocks li .down {
+    background: white url(https://designmodo.com/startup/app/i/card-down.svg) no-repeat 50% 50%
+}
+
+#blocks li .delete {
+    top: 15px;
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+    background: white url(https://designmodo.com/startup/app/i/card-delete.svg) no-repeat 50% 50%
+
+}
+
+
+#blocks li .edit {
+    top: 52px;
+    -webkit-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform: translateX(40px);
+    background: white url(https://image.flaticon.com/icons/svg/60/60785.svg) no-repeat 50% 50%;
+    background-size: 16px 16px;
+}
+
+#rightSide {
+    position: fixed;
+    top: 0px;
+    right: 3px;
+    bottom: 40px;
+    height: auto;
+    width: 227px;
+    z-index: 90;
+    -webkit-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    -o-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
+    transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1)
+}
+
+#rightSide > .nano-content {
+    padding: 10px 0 0px 10px;
+    right: 0 !important;
+    left: 0px
+}
+
+#rightSide > .nano-pane {
+    top: 10px;
+    bottom: 10px;
+    left: 0px;
+    width: 4px;
+    display: block !important;
+    background: none
+}
+
+#rightSide > .nano-pane .nano-slider {
+    background: #2094FF;
+    margin-left: 0px;
+    width: 4px;
+    opacity: 0.2;
+    cursor: pointer
+}
+
+#rightSide > .nano-pane .nano-slider:hover {
+    opacity: 0.8
+}
+
+#rightSide .block {
+    margin-bottom: 10px;
+    border-radius: 10px
+}
+
+#rightSide .block .random {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer
+}
+
+#rightSide .block .random.white {
+    background-image: url(https://designmodo.com/startup/app/i/random.svg)
+}
+
+#rightSide .block .random.gray {
+    background-image: url(https://designmodo.com/startup/app/i/random-gray.svg)
+}
+
+#rightSide .block .random:hover {
+    opacity: 0.7
+}
+
+#rightSide .block .dropdown {
+    position: relative
+}
+
+#rightSide .block .dropdown .selected {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 40px 15px 20px;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+    letter-spacing: -0.225px;
+    -webkit-transition: all 0.5s cubic-bezier(0.04, 1.34, 0.27, 0.92);
+    -o-transition: all 0.5s cubic-bezier(0.04, 1.34, 0.27, 0.92);
+    transition: all 0.5s cubic-bezier(0.04, 1.34, 0.27, 0.92);
+    cursor: pointer
+}
+
+#rightSide .block .dropdown .selected:hover {
+    opacity: 0.8
+}
+
+#rightSide .block .dropdown .selected:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url(https://designmodo.com/startup/app/i/fa-angle-down.svg) no-repeat 50% 50%;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+#rightSide .block .dropdown .list {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s
+}
+
+#rightSide .block .dropdown ul {
+    position: relative;
+    padding: 10px;
+    background: #2094FF
+}
+
+#rightSide .block .dropdown ul li {
+    margin-bottom: 4px;
+    padding: 0px 10px;
+    font-weight: 500;
+    line-height: 30px;
+    font-size: 16px;
+    letter-spacing: -0.225px;
+    border-radius: 10px;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+    cursor: pointer
+}
+
+#rightSide .block .dropdown ul li.active, #rightSide .block .dropdown ul li:hover {
+    background: white;
+    color: #2094FF
+}
+
+#rightSide .title {
+    position: relative;
+    padding: 18px 20px;
+    line-height: 1;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase
+}
+
+#rightSide .subtitle {
+    margin-bottom: 6px;
+    padding: 0 20px;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: 14px;
+    letter-spacing: -0.225px;
+    color: #FFFFFF
+}
+
+#rightSide .style {
+    background: #2094FF;
+    color: white
+}
+
+#rightSide .style.open .title:before {
+    -webkit-transform: translateY(-50%) scaleY(-1);
+    -ms-transform: translateY(-50%) scaleY(-1);
+    transform: translateY(-50%) scaleY(-1)
+}
+
+#rightSide .style .title {
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer
+}
+
+#rightSide .style .title:hover {
+    opacity: 0.8
+}
+
+#rightSide .style .title:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url(https://designmodo.com/startup/app/i/fa-angle-down.svg) no-repeat 50% 50%;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s
+}
+
+#rightSide .style .dropdown .list {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px
+}
+
+#rightSide .style .dropdown ul {
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    padding-top: 6px;
+    padding-bottom: 8px
+}
+
+#rightSide .font {
+    position: relative;
+    background: #9B9BAC;
+    padding-bottom: 24px
+}
+
+#rightSide .font .subset {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    min-height: 22px;
+    color: #919DAB;
+    z-index: 10
+}
+
+#rightSide .font .subset .selected {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    padding: 0 20px 0 9px;
+    font-weight: 600;
+    line-height: 22px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    background: #EBEAED;
+    border-radius: 10px;
+    -webkit-transition: opacity 0.25s;
+    -o-transition: opacity 0.25s;
+    transition: opacity 0.25s
+}
+
+#rightSide .font .subset .selected:hover {
+    opacity: 0.8
+}
+
+#rightSide .font .subset .selected:before {
+    background: url(https://designmodo.com/startup/app/i/fa-angle-down-gray.svg) no-repeat 50% 50%;
+    right: 5px
+}
+
+#rightSide .font .subset .selected.opened {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px
+}
+
+#rightSide .font .subset .selected.opened:hover {
+    opacity: 1
+}
+
+#rightSide .font .subset .list {
+    position: absolute;
+    top: 100%;
+    left: 0
+}
+
+#rightSide .font .subset ul {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2px 0px 3px 5px;
+    background: #EBEAED
+}
+
+#rightSide .font .subset ul li {
+    margin-bottom: 2px;
+    display: inline-block;
+    padding: 0px 4px;
+    font-weight: 600;
+    line-height: 18px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-radius: 5px
+}
+
+#rightSide .font .subset ul li.active, #rightSide .font .subset ul li:hover {
+    background: #919DAB;
+    color: #fff
+}
+
+#rightSide .font .font_selector {
+    margin: 0 20px;
+    padding: 0 16px;
+    background: #AFAFBD;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: 500;
+    line-height: 42px;
+    color: white;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+    cursor: pointer
+}
+
+#rightSide .font .font_selector:hover {
+    background: #a7a7b6
+}
+
+#rightSide .font .font_selector div {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis
+}
+
+#rightSide .font .choose_font_popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 589px;
+    background: #AFAFBD;
+    border-radius: 10px;
+    z-index: 10
+}
+
+#rightSide .font .choose_font_popup .title {
+    padding-bottom: 12px;
+    color: white;
+    text-transform: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0;
+    cursor: pointer
+}
+
+#rightSide .font .choose_font_popup .title:before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 14px;
+    margin-right: 8px;
+    background: url(https://designmodo.com/startup/app/i/fa-angle-left-white.svg) no-repeat 50% 50%;
+    vertical-align: bottom
+}
+
+#rightSide .font .choose_font_popup .title:hover {
+    opacity: 0.8
+}
+
+#rightSide .font .choose_font_popup .search_font {
+    position: relative
+}
+
+#rightSide .font .choose_font_popup .search_font:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: url(https://designmodo.com/startup/app/i/search.svg) no-repeat 50% 50%;
+    background-size: contain
+}
+
+#rightSide .font .choose_font_popup .search_font input {
+    margin: 0 auto 8px auto;
+    display: block;
+    width: 170px;
+    height: 31px;
+    padding: 0 20px 0 30px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 18px;
+    color: white;
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 500;
+    letter-spacing: -0.225px;
+    outline: none;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s
+}
+
+#rightSide .font .choose_font_popup .search_font input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+#rightSide .font .choose_font_popup .search_font input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+#rightSide .font .choose_font_popup .search_font input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.3)
+}
+
+#rightSide .font .choose_font_popup .search_font input:focus {
+    border-color: rgba(255, 255, 255, 0.8)
+}
+
+#rightSide .font .choose_font_popup .search_font input:focus::-moz-placeholder {
+    color: transparent
+}
+
+#rightSide .font .choose_font_popup .search_font input:focus::-webkit-input-placeholder {
+    color: transparent
+}
+
+#rightSide .font .choose_font_popup .search_font input:focus:-ms-input-placeholder {
+    color: transparent
+}
+
+#rightSide .font .choose_font_popup .families {
+    max-height: 506px
+}
+
+#rightSide .font .choose_font_popup .families .nano-content {
+    padding: 0px;
+    right: 0px !important
+}
+
+#rightSide .font .choose_font_popup .families .nano-pane {
+    top: 0px;
+    bottom: 0px;
+    right: 6px;
+    width: 4px;
+    display: block !important;
+    background: none
+}
+
+#rightSide .font .choose_font_popup .families .nano-slider {
+    background: #2094FF;
+    margin-left: 0px;
+    width: 4px;
+    opacity: 0.2;
+    cursor: pointer
+}
+
+#rightSide .font .choose_font_popup .families .nano-slider:hover {
+    opacity: 0.8
+}
+
+#rightSide .font .choose_font_popup .families .variants {
+    margin-left: 10px;
+    margin-right: 20px
+}
+
+#rightSide .font .choose_font_popup .families li {
+    margin-bottom: 2px;
+    height: auto;
+    width: auto;
+    display: block;
+    padding: 4px 11px;
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: -0.225px;
+    border-radius: 10px;
+    color: white;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+    cursor: pointer
+}
+
+#rightSide .font .choose_font_popup .families li:hover {
+    background: rgba(21, 20, 57, 0.4)
+}
+
+#rightSide .font .choose_font_popup .families li.active {
+    background: rgba(255, 255, 255, 0.2)
+}
+
+#rightSide .font .choose_font_popup .families li.hidden_by_search,
+#rightSide .font .choose_font_popup .families li.hidden_by_subset {
+    display: none
+}
+
+#rightSide .font .dropdown_weight {
+    margin: 0 20px 24px 20px;
+    min-height: 42px;
+    color: #919DAB;
+    z-index: 9
+}
+
+#rightSide .font .dropdown_weight.choose_main_weight {
+    margin-bottom: 0;
+    z-index: 8
+}
+
+#rightSide .font .dropdown_weight .selected {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    padding: 0 16px;
+    background: #8C8C9F;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    line-height: 42px;
+    color: white;
+    -webkit-transition: background-color 0.25s;
+    -o-transition: background-color 0.25s;
+    transition: background-color 0.25s
+}
+
+#rightSide .font .dropdown_weight .selected:hover {
+    background: #717188;
+    opacity: 1
+}
+
+#rightSide .font .dropdown_weight .selected.opened:hover {
+    opacity: 1;
+    background: #8C8C9F
+}
+
+#rightSide .font .dropdown_weight .selected.single_weight:before {
+    display: none
+}
+
+#rightSide .font .dropdown_weight .list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05)
+}
+
+#rightSide .font .dropdown_weight .variants {
+    padding: 4px 0;
+    background: #8C8C9F;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px
+}
+
+#rightSide .font .dropdown_weight .variants li:hover {
+    background: #717188;
+    color: white
+}
+
+#rightSide .font .dropdown_weight .variants li.active, #rightSide .font .dropdown_weight .variants li.active:hover {
+    background: #A3A3B2;
+    color: white
+}
+
+#rightSide .font .dropdown_weight ul li {
+    height: auto;
+    width: auto;
+    display: block;
+    padding: 4px 16px;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: -0.225px;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+    cursor: pointer
+}
+
+#rightSide .font .dropdown_weight ul li[data-weight="100"] {
+    font-weight: 100
+}
+
+#rightSide .font .dropdown_weight ul li[data-weight="200"] {
+    font-weight: 200
+}
+
+#rightSide .font .dropdown_weight ul li[data-weight="300"] {
+    font-weight: 300
+}
+
+#rightSide .font .dropdown_weight ul li[data-weight="400"] {
+    font-weight: 400
+}
+
+#rightSide .font .dropdown_weight ul li[data-weight="500"] {
+    font-weight: 500
+}
+
+#rightSide .font .dropdown_weight ul li[data-weight="600"] {
+    font-weight: 600
+}
+
+#rightSide .font .dropdown_weight ul li[data-weight="700"] {
+    font-weight: 700
+}
+
+#rightSide .font .dropdown_weight ul li[data-weight="800"] {
+    font-weight: 800
+}
+
+#rightSide .font .dropdown_weight ul li[data-weight="900"] {
+    font-weight: 900
+}
+
+#rightSide .color {
+    position: relative;
+    padding-bottom: 10px;
+    background: white;
+    color: #919DAB
+}
+
+#rightSide .color .title {
+    color: #919DAB
+}
+
+#rightSide .color .subtitle {
+    color: #919DAB
+}
+
+#rightSide .color .inputs {
+    padding: 0 18px 10px 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+#rightSide .animation {
+    position: relative;
+    background: #2094FF
+}
+
+#rightSide .animation #animation_toggle {
+    display: none
+}
+
+#rightSide .animation #animation_toggle:checked + label {
+    background: #2094FF
+}
+
+#rightSide .animation #animation_toggle:checked + label:before {
+    background: #ffffff;
+    -webkit-box-shadow: 0px 5px 10px #2094FF;
+    box-shadow: 0px 5px 10px #2094FF;
+    left: 14px
+}
+
+#rightSide .animation #animation_toggle:checked ~ .inner {
+    height: 164px
+}
+
+#rightSide .animation label[for=animation_toggle] {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    width: 28px;
+    height: 16px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s
+}
+
+#rightSide .animation label[for=animation_toggle]:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    background: #2094FF;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s
+}
+
+#rightSide .animation .inner {
+    padding: 0 20px;
+    height: 0px;
+    overflow: hidden;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s
+}
+
+#rightSide .animation .subtitle {
+    padding: 0;
+    margin-bottom: 12px
+}
+
+#rightSide .animation .anim_speed {
+    position: relative;
+    margin-bottom: 18px
+}
+
+#rightSide .animation .anim_speed #anim_speed_value {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: -0.225px;
+    color: #2094FF
+}
+
+#rightSide .animation .anim_style {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+#rightSide .animation .anim_style input[type=radio] {
+    display: none
+}
+
+#rightSide .animation .anim_style input[type=radio]:checked + label {
+    background: #fff
+}
+
+#rightSide .animation .anim_style input[type=radio]:checked + label .fill {
+    fill: #2094FF
+}
+
+#rightSide .animation .anim_style input[type=radio]:checked + label .stroke {
+    stroke: #2094FF
+}
+
+#rightSide .animation .anim_style label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-transition: all 0.5s cubic-bezier(0.04, 1.34, 0.27, 0.92);
+    -o-transition: all 0.5s cubic-bezier(0.04, 1.34, 0.27, 0.92);
+    transition: all 0.5s cubic-bezier(0.04, 1.34, 0.27, 0.92);
+    cursor: pointer
+}
+
+#rightSide .animation .anim_style label:hover {
+    background: rgba(255, 255, 255, 0.4)
+}
+
+#rightSide .animation .anim_style .fill, #rightSide .animation .anim_style .stroke {
+    -webkit-transition: all 0.5s cubic-bezier(0.04, 1.34, 0.27, 0.92);
+    -o-transition: all 0.5s cubic-bezier(0.04, 1.34, 0.27, 0.92);
+    transition: all 0.5s cubic-bezier(0.04, 1.34, 0.27, 0.92)
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 7px 15px;
+    background: #FAF9FC;
+    z-index: 110
+}
+
+footer .left a {
+    margin-right: 20px
+}
+
+footer .right a {
+    margin-left: 20px
+}
+
+footer a {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #a1a1b0;
+    -webkit-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+    cursor: pointer
+}
+
+footer a:hover {
+    color: #635D7B
+}
+
+footer #openSupport {
+    position: relative;
+    padding-left: 25px
+}
+
+footer #openSupport:before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: url(https://designmodo.com/startup/app/i/icon-support.svg) no-repeat 50% 50%;
+    background-size: contain
+}
+
+footer #buy {
+    color: #E93A7D
+}
+
+footer #buy:hover {
+    color: #c11657
+}
+
+footer #changelog {
+    position: relative;
+    color: #2094FF
+}
+
+footer #changelog:visited {
+    color: #a1a1b0;
+    padding-right: 0
+}
+
+footer #changelog:visited:hover {
+    color: #635D7B
+}
+
+footer #changelog:visited i {
+    background-color: #FAF9FC
+}
+
+footer #changelog i {
+    display: block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    right: -10px;
+    top: 0;
+    background-color: #2094FF;
+    border-radius: 100%
+}
+
+#alertPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 320px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #E93A7D;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    -webkit-box-shadow: 0px 5px 10px rgba(117, 117, 117, 0.5);
+    box-shadow: 0px 5px 10px rgba(117, 117, 117, 0.5);
+    z-index: 9990
+}
