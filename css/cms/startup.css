@@ -989,7 +989,7 @@ h1 {
     right: 236px;
     width: 44px;
     height: 30px;
-    background: #cac6db url(https://designmodo.com/startup/app/i/toggle.svg) no-repeat 50% 50%;
+    background: #cac6db no-repeat 50% 50%;
     border-radius: 22px;
     -webkit-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
     -o-transition: all 0.25s cubic-bezier(0.39, 1.31, 0.28, 1);
