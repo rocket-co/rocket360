@@ -124,6 +124,9 @@
                         "core-appear": function() {
                             return a.coreAppear()
                         },
+                        "core-appear-countTo": function() {
+                            return a.coreAppearCountTo()
+                        },
                         "core-ripple": function() {
                             return a.coreRipple()
                         },
@@ -283,6 +286,24 @@
                         }, i)
                     }, {
                         accY: r
+                    })
+                })
+            }
+        }, {
+            key: "coreAppearCountTo",
+            value: function() {
+                jQuery('[data-toggle="countTo"]:not(.js-count-to-enabled)').each(function(e, a) {
+                    var t = jQuery(a),
+                        n = t.data("after"),
+                        o = t.data("before");
+                    t.addClass("js-count-to-enabled").appear(function() {
+                        t.countTo({
+                            speed: t.data("speed") || 1500,
+                            refreshInterval: t.data("refresh-interval") || 15,
+                            onComplete: function() {
+                                n ? t.html(t.html() + n) : o && t.html(o + t.html())
+                            }
+                        })
                     })
                 })
             }
@@ -655,6 +676,11 @@
         }
         var a, t, n;
         return a = e, (t = [{
+            key: "_uiInit",
+            value: function() {
+                this._lHtml = jQuery("html"), this._lBody = jQuery("body"), this._lpageLoader = jQuery("#page-loader"), this._lPage = jQuery("#page-container"), this._lSidebar = jQuery("#sidebar"), this._lSideOverlay = jQuery("#side-overlay"), this._lHeader = jQuery("#page-header"), this._lHeaderSearch = jQuery("#page-header-search"), this._lHeaderSearchInput = jQuery("#page-header-search-input"), this._lHeaderLoader = jQuery("#page-header-loader"), this._lMain = jQuery("#main-container"), this._lFooter = jQuery("#page-footer"), this._lSidebarScroll = !1, this._lSideOverlayScroll = !1, this._windowW = o.getWidth(), this._uiHandleScroll("init"), this._uiHandleMain(), this._uiHandleHeader(), this._uiHandleNav(), this._uiHandleForms(), this._uiHandleTheme(), this._uiApiLayout(), this._uiApiBlocks(), this.helpers(["core-tooltip", "core-popover", "core-tab", "core-custom-file-input", "core-toggle-class", "core-scrollTo", "core-year-copy", "core-appear", "core-appear-countTo", "core-ripple"]), this._uiHandlePageLoader()
+            }
+        }, {
             key: "_uiHandleScroll",
             value: function() {
                 this._lPage.hasClass("side-scroll") ? (this._lSidebar.length > 0 && !this._lSidebarScroll && (this._lSidebarScroll = new SimpleBar(this._lSidebar[0]), jQuery(".simplebar-scroll-content", this._lSidebar).scrollLock("enable")), this._lSideOverlay.length > 0 && !this._lSideOverlayScroll && (this._lSideOverlayScroll = new SimpleBar(this._lSideOverlay[0]), jQuery(".simplebar-scroll-content", this._lSideOverlay).scrollLock("enable"))) : (this._lSidebar && this._lSidebarScroll && (jQuery(".simplebar-scroll-content", this._lSidebar).scrollLock("disable"), this._lSidebarScroll.unMount(), this._lSidebarScroll = null, this._lSidebar.removeAttr("data-simplebar").html(jQuery(".simplebar-content", this._lSidebar).html())), this._lSideOverlay && this._lSideOverlayScroll && (jQuery(".simplebar-scroll-content", this._lSideOverlay).scrollLock("disable"), this._lSideOverlayScroll.unMount(), this._lSideOverlayScroll = null, this._lSideOverlay.removeAttr("data-simplebar").html(jQuery(".simplebar-content", this._lSideOverlay).html())))
