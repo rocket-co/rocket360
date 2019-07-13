@@ -157,9 +157,7 @@
                         slick: function() {
                             return a.slick()
                         },
-                        datepicker: function() {
-                            return a.datepicker()
-                        },
+
                         colorpicker: function() {
                             return a.colorpicker()
                         },
@@ -483,19 +481,6 @@
                         autoplay: t.data("autoplay") || !1,
                         autoplaySpeed: t.data("autoplay-speed") || 3e3,
                         infinite: void 0 === t.data("infinite") || t.data("infinite")
-                    })
-                })
-            }
-        }, {
-            key: "datepicker",
-            value: function() {
-                jQuery(".js-datepicker:not(.js-datepicker-enabled)").add(".input-daterange:not(.js-datepicker-enabled)").each(function(e, a) {
-                    var t = jQuery(a);
-                    t.addClass("js-datepicker-enabled").datepicker({
-                        weekStart: t.data("week-start") || 0,
-                        autoclose: t.data("autoclose") || !1,
-                        todayHighlight: t.data("today-highlight") || !1,
-                        orientation: "bottom"
                     })
                 })
             }
