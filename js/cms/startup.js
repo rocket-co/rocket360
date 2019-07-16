@@ -10,7 +10,7 @@ $(window).on('popstate',function(e){
 	}
 });
 
-document.addEventListener("turbolinks:load", function() {
+$('document').ready(function() {
 
 	$(window).resize(function(){
 		resizeVideo();
@@ -57,15 +57,15 @@ document.addEventListener("turbolinks:load", function() {
 	}
 
 	// AJAX send form
-		
+
 	$("form").submit(function(event){
 		event.preventDefault();
-	 
+
 		var form = $(this),
 			term = form.serialize(),
 			url = form.attr("action"),
 			required_fields_filled = true;
-			
+
 		form.find("input, textarea, select").each(function(){
 			if($(this).prop("required") && $(this).val()==""){
 				required_fields_filled = false;
@@ -130,7 +130,7 @@ document.addEventListener("turbolinks:load", function() {
 			});
 		});
 	});
-	 
+
 	// Open video in popup
 
 	$(".js-play-popup-video").click(function(event){
@@ -214,7 +214,7 @@ document.addEventListener("turbolinks:load", function() {
 	if($(".js-cvv-mask").length > 0){
 		$(".js-cvv-mask").mask("999");
 	}
-	
+
 	// Disable / enable blocks in Form 13
 
 	$(".form_13 input[type=radio]").change(function(){
@@ -227,7 +227,7 @@ document.addEventListener("turbolinks:load", function() {
 
 	if($(".js-google-map").length>0){
 		$(".js-google-map").each(function(){
-			
+
 			var map;
 			var map_container = this;
 			if($(map_container).attr("data-coords")!=undefined){
@@ -251,11 +251,11 @@ document.addEventListener("turbolinks:load", function() {
 						zoom: zoom,
 						center: coords,				},
 					map = new google.maps.Map(map_container, mapOptions);
-				if(marker_image){	
+				if(marker_image){
 					var marker_icon = {
-						url: marker_image, 
+						url: marker_image,
 						scaledSize: new google.maps.Size(marker_size[0], marker_size[1]),
-						origin: new google.maps.Point(0,0), 
+						origin: new google.maps.Point(0,0),
 						anchor: new google.maps.Point(marker_size[0]/2, marker_size[1])
 					},
 					marker = new google.maps.Marker({
@@ -266,7 +266,7 @@ document.addEventListener("turbolinks:load", function() {
 				}
 
 			}
-			
+
 			init();
 
 		});
@@ -355,7 +355,7 @@ document.addEventListener("turbolinks:load", function() {
 				}
 			]
 		});
-		
+
 		$('.content_23_slider_nav').slick({
 			slidesToShow: 4,
 			slidesToScroll: 1,
@@ -489,7 +489,7 @@ document.addEventListener("turbolinks:load", function() {
 			adaptiveHeight: true,
 			asNavFor: '.form_4_menu',
 		});
-		
+
 		$('.form_4_menu').slick({
 			slidesToShow: 2,
 			slidesToScroll: 1,
@@ -509,7 +509,7 @@ document.addEventListener("turbolinks:load", function() {
 			adaptiveHeight: true,
 			asNavFor: '.form_15_menu',
 		});
-		
+
 		$('.form_15_menu').slick({
 			slidesToShow: 2,
 			slidesToScroll: 1,
@@ -532,7 +532,7 @@ document.addEventListener("turbolinks:load", function() {
 			slidesToShow: 1,
 			slidesToScroll: 1,
 		});
-		
+
 		var toggle = $(".custom-toggle");
 		var togglePin = toggle.find("i");
 		$(".pricing_table_6 .slider").on('beforeChange',function(){
@@ -545,7 +545,7 @@ document.addEventListener("turbolinks:load", function() {
 				togglePin.animate({left:animate_to},200);
 			}
 		});
-		
+
 		toggle.click(function(){
 			$(".pricing_table_6 .slider").slick("slickNext");
 		});
