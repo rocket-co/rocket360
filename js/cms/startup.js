@@ -10,7 +10,7 @@ $(window).on('popstate',function(e){
 	}
 });
 
-$('document').ready(function() {
+$(document).ready(function() {
 
 	$(window).resize(function(){
 		resizeVideo();
