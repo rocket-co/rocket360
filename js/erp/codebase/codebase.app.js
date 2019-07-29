@@ -886,7 +886,7 @@
                           o = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
                           l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "init",
                           r = this,
-                          i = "si si-size-fullscreen",
+                          i = "fal fa-arrows",
                           s = {
                               init: function() {
                                   jQuery('[data-toggle="block-option"][data-action="fullscreen_toggle"]').each(function(e, a) {
