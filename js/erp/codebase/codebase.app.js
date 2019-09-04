@@ -1033,6 +1033,7 @@
       }]);
 
 
+      Codebase.helpers('table-tools');
 
       //Override the default confirm dialog by rails
       $.rails.allowAction = function(link){
